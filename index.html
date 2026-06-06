@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Neon Labyrinth | Human vs Agent</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell" aria-label="Neon Labyrinth 迷宫竞速">
+    <canvas id="gameCanvas" aria-label="赛博迷宫画布"></canvas>
+
+    <section class="hud top-hud">
+      <div class="brand-block">
+        <span class="eyebrow">NEON LABYRINTH</span>
+        <strong>人类 vs Agent</strong>
+      </div>
+      <div class="hud-chip danger">
+        <span>计时</span>
+        <strong id="timerText">00.00</strong>
+      </div>
+      <div class="hud-chip">
+        <span>你</span>
+        <strong id="playerNodesText">0/3</strong>
+      </div>
+      <div class="hud-chip agent">
+        <span>Agent</span>
+        <strong id="agentNodesText">0/3</strong>
+      </div>
+    </section>
+
+    <section class="side-panel">
+      <button id="scanBtn" class="ability-btn" type="button" title="显示你到最近核心或出口的路线">
+        <b>扫描</b><span id="scanText">2</span>
+      </button>
+      <button id="phaseBtn" class="ability-btn hot" type="button">
+        <b>穿墙</b><span id="phaseText">2</span>
+      </button>
+      <button id="jamBtn" class="ability-btn red" type="button">
+        <b>干扰</b><span id="jamText">1</span>
+      </button>
+    </section>
+
+    <section class="bottom-console">
+      <div>
+        <span id="statusLabel">任务</span>
+        <strong id="messageText">抢先收集 3 个数据核心，然后冲进出口。Agent 会实时寻路。</strong>
+      </div>
+      <div class="mini-map-note">WASD / 方向键移动 · Q 扫描最短路线 · 空格穿墙 · E 干扰 · 画布点击不再自动寻路</div>
+    </section>
+
+    <section id="startScreen" class="overlay start-screen">
+      <div class="glass-card start-card">
+        <div class="title-line"></div>
+        <p class="eyebrow">RACE PROTOCOL 09</p>
+        <h1>霓虹迷宫竞速</h1>
+        <p class="intro">
+          你和路径规划 Agent <b>VEGA-9</b> 被投放进同一座量子迷宫。
+          迷宫里有 3 个数据核心。先集齐核心并抵达出口的一方胜利。
+        </p>
+        <div class="rule-grid">
+          <div><b>扫描</b><span>显示你到最近未同步核心/出口的最短路，并短暂加速；红线显示 Agent 当前计划</span></div>
+          <div><b>穿墙</b><span>2 秒内越过实体墙，用来抄近路或救场</span></div>
+          <div><b>干扰</b><span>让 Agent 路径模块降速并延迟重规划</span></div>
+          <div><b>资源收敛</b><span>开局扫描/穿墙/干扰各 1 次；场上仅 9 个补给点，三类道具各 3 个</span></div>
+        </div>
+        <div class="start-actions four-modes">
+          <button class="start-btn easy" data-mode="training" type="button"><b>训练官</b><span>基础 A* 限速</span></button>
+          <button class="start-btn greedy" data-mode="greedy" type="button"><b>贪婪局</b><span>曼哈顿贪婪</span></button>
+          <button class="start-btn" data-mode="normal" type="button"><b>A* 标准局</b><span>全局最短路</span></button>
+          <button class="start-btn hard" data-mode="hard" type="button"><b>预测局</b><span>前瞻规划 Agent</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultScreen" class="overlay result-screen hidden">
+      <div class="glass-card result-card">
+        <p class="eyebrow">MATCH RESULT</p>
+        <h1 id="resultTitle">胜负已定</h1>
+        <p id="resultText"></p>
+        <button id="restartBtn" type="button">重新开始</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
