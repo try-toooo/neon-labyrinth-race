@@ -8,8 +8,8 @@ A sci-fi AI maze racing game. The player competes with an autonomous Agent insid
 
 ---
 
-<img width="915" height="819" alt="dd3d4ec7-6579-4a23-85ed-32f5e0f1fdec" src="https://github.com/user-attachments/assets/44225fed-1913-47d6-92e6-9b49eb043a72" />
-<img width="746" height="873" alt="fcd7a7ee6319ceda4796cc6220e13ebc" src="https://github.com/user-attachments/assets/4acda1b4-28c0-4f81-8f8e-82d3f02c51d3" />
+<img width="300" height="300" alt="dd3d4ec7-6579-4a23-85ed-32f5e0f1fdec" src="https://github.com/user-attachments/assets/44225fed-1913-47d6-92e6-9b49eb043a72" />
+<img width="300" height="300" alt="fcd7a7ee6319ceda4796cc6220e13ebc" src="https://github.com/user-attachments/assets/4acda1b4-28c0-4f81-8f8e-82d3f02c51d3" />
 
 
 ## English
