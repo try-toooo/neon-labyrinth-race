@@ -1,6 +1,4 @@
-# neon-labyrinth-race
-
-# Neon Labyrinth Race
+<img width="2541" height="1137" alt="d36a8a51ae6507fac9de8d136be1ba71" src="https://github.com/user-attachments/assets/4ab24c66-d052-4f96-890a-e1e9a8db4cbc" /># Neon Labyrinth Race
 
 # 霓虹迷宫竞速
 
