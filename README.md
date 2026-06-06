@@ -1,4 +1,4 @@
-<img width="2541" height="1137" alt="d36a8a51ae6507fac9de8d136be1ba71" src="https://github.com/user-attachments/assets/4ab24c66-d052-4f96-890a-e1e9a8db4cbc" /># Neon Labyrinth Race
+
 
 # 霓虹迷宫竞速
 
@@ -7,6 +7,10 @@ A sci-fi AI maze racing game. The player competes with an autonomous Agent insid
 一个科幻风格的 AI 迷宫竞速小游戏。玩家需要在霓虹迷宫中与智能体 Agent 实时竞争，抢先同步数据核心，并冲向出口。
 
 ---
+
+<img width="915" height="819" alt="dd3d4ec7-6579-4a23-85ed-32f5e0f1fdec" src="https://github.com/user-attachments/assets/44225fed-1913-47d6-92e6-9b49eb043a72" />
+<img width="746" height="873" alt="fcd7a7ee6319ceda4796cc6220e13ebc" src="https://github.com/user-attachments/assets/4acda1b4-28c0-4f81-8f8e-82d3f02c51d3" />
+
 
 ## English
 
